@@ -16,25 +16,25 @@ public class TestCases {
 	
 	
 	@Test
-	public void test(){
+	public void initializeUsingConstructor(){
 		pageactions.registerWithValidData("prasad", "surname","email@test.com");
 		pageactions.teardown();
 	}
 	
 	@Test
-	public void test2(){
+	public void initializeWhenRequired(){
 		pageactions2.registerWithValidData("prasad", "surname","email@test.com");
 		pageactions2.teardown();
 	}
 	
 	@Test
-	public void test3(){
+	public void initializeUsingClassObj(){
 		pageactions3.registerWithValidData("prasad", "surname","email@test.com");
 		pageactions3.teardown();
 	}
 	
 	@Test
-	public void test4(){
+	public void customGlobalInitialization(){
 		 GlobalInitialize.registerPage4().inputUserName("Prasad");
 		 GlobalInitialize.registerPage4().inputSurName("Automation");
 		 GlobalInitialize.registerPage4().inputeMail("test@mail.com");
